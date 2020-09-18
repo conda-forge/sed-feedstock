@@ -3,7 +3,7 @@ About sed
 
 Home: https://www.gnu.org/software/sed/
 
-Package license: GPL-3
+Package license: GPL-3.0-or-later
 
 Feedstock license: BSD-3-Clause
 
@@ -15,7 +15,21 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>Travis</td>
+    <td>
+      <a href="https://travis-ci.com/conda-forge/sed-feedstock">
+        <img alt="macOS" src="https://img.shields.io/travis/com/conda-forge/sed-feedstock/master.svg?label=macOS">
+      </a>
+    </td>
+  </tr><tr>
+    <td>Drone</td>
+    <td>
+      <a href="https://cloud.drone.io/conda-forge/sed-feedstock">
+        <img alt="linux" src="https://img.shields.io/drone/build/conda-forge/sed-feedstock/master.svg?label=Linux">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -156,5 +170,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@isuruf](https://github.com/isuruf/)
 * [@tfors](https://github.com/tfors/)
 
