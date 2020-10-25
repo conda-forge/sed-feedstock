@@ -17,7 +17,7 @@ if [[ ${target_platform} == linux-aarch64 ]]; then
 elif [[ ${target_platform} == linux-ppc64le ]]; then
     make check -j${NUM_CPUS} || true
 else
-    make check -j${NUM_CPUS} || (gnulib-tests/test-suite.log; false)
+    make check -j${NUM_CPUS} || (cat gnulib-tests/test-suite.log; false)
 fi
 cat ./test-suite.log
 
