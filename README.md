@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sed-feedstock/b
 
 Home: https://www.gnu.org/software/sed/
 
-Package license: GPL-3
+Package license: GPL-3.0-or-later
 
 Summary: sed (stream editor) is a non-interactive command-line text editor.
 
