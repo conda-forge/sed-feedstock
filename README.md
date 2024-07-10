@@ -190,6 +190,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@hmaarrfk](https://github.com/hmaarrfk/)
 * [@tfors](https://github.com/tfors/)
 
