@@ -6,7 +6,6 @@ package:
   version: {{ version }}
 
 source:
-  fn: sed-{{ version }}.tar.gz
   url: http://ftp.gnu.org/gnu/sed/sed-{{ version }}.tar.xz
   sha256: {{ sha256 }}
 
@@ -18,11 +17,10 @@ requirements:
   build:
     - gnuconfig  # [unix]
     - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - make
   host:
-    - gettext >=0.19.2  # [osx]
-  run:
-    - gettext >=0.19.2  # [osx]
+    - gettext      # [osx]
 
 test:
   commands:
@@ -38,3 +36,4 @@ about:
 extra:
   recipe-maintainers:
     - tfors
+    - hmaarrfk
