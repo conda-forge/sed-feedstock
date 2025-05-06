@@ -18,8 +18,9 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib('c') }}
     - make
+    - gettext-tools
   host:
-    - gettext      # [osx]
+    - libintl-devel      # [osx]
 
 test:
   commands:
