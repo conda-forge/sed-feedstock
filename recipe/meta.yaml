@@ -2,7 +2,7 @@
 
 package:
   name: sed
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: http://ftp.gnu.org/gnu/sed/sed-{{ version }}.tar.xz
