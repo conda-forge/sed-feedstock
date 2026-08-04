@@ -15,7 +15,9 @@ make $VERBOSE_AT
 
 # These tests fail under emulation, still run them but ignore their result
 if [[ ${target_platform} == linux-aarch64 ]]; then
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR:-}" != "" ]]; then
     make check -j${NUM_CPUS} || true
+fi
 elif [[ ${target_platform} == linux-ppc64le ]]; then
     make check -j${NUM_CPUS} || true
 elif [[ "$CONDA_BUILD_CROSS_COMPILATION" != "1" ]]; then
