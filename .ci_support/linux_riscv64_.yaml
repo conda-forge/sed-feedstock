@@ -1,3 +1,5 @@
+DOCKER_PLATFORM:
+- linux/amd64
 VERBOSE_AT:
 - V=1
 c_compiler:
